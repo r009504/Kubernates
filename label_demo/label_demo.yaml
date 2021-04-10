@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+meetadata: 
+  name: label-demo
+  labels:
+    environment: dev
+    team: ops-oinfra
+    project: ecommerce
+spec:
+  containers:
+    - name: nginx-container
+      image: nginx
+      ports:
+        - containerPort: 80
+          protocol: TCP
+          
