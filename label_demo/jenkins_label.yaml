@@ -1,0 +1,17 @@
+---
+apiVersion: v1
+kind: Pod
+meetadata: 
+  name: jenkins-label-demo
+  labels:
+    environment: QA
+    team: sys-ops
+    project: ecommerce
+spec:
+  containers:
+    - name: jenkins-container
+      image: jenkins/jenkins
+      ports:
+        - containerPort: 8080
+          protocol: TCP
+          
