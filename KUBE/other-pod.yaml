@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: other-pod
+spec:
+  containers:
+    - name: Jenkins
+      image: jenkins
+      ports:
+        - containerPort: 8880
+          protocol: TCP
+      
