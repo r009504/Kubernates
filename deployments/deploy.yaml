@@ -13,7 +13,7 @@ spec:
       app: jenkins-apps
       environment: prod
   strategy:
-    type = RollingUpdate
+    type: RollingUpdate
     rollingUpdate:
       maxSurge: 25%
       maxUnavailable: 25%
