@@ -1,8 +1,8 @@
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name: http_replica
+  name: http-replica
   labels:
     app: httpd
 spec:
@@ -17,7 +17,7 @@ spec:
         app: httpd
     spec:
       containers:
-        - name: httpd_container
+        - name: httpd-container
           image: httpd:latest
           ports:
             - containerPort: 80
