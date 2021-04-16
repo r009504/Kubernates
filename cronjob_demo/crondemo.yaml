@@ -1,0 +1,21 @@
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  labels:
+    name: cronjob-demo
+spec:
+  schedule: 
+  jobTemplate:
+    metadata:
+      name: cronjob-demo
+    spec:
+      template:
+        metadata:
+          name: cronjob-demo
+          containers:
+            name: cronjbb-container
+            image: alpine
+                     
+         
+
